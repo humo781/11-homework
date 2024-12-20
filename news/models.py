@@ -13,4 +13,4 @@ class Post(models.Model):
     def get_detail_url(self):
         return reverse('news:detail', args=[self.pk])
 
-
+#
