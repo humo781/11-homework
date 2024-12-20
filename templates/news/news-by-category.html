@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} {{ category }} Yangiliklar {% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <h2 id="category-title">{{ post.title }}</h2>
+        <div id="news-list">
+            <div class="news-item">
+                <h3>{{ post.short_content }}</h3>
+                <a href="{{ post.get_detail_url }}" class="read-more">Batafsil</a>
+            </div>
+        </div>
+    {% empty %}
+        <h1>No Post Yet!</h1>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,34 @@
+Boshlang'ich sozlamalar
+1. gitinore sozlash
+2. venv yaratish va aktivatsiya qilish
+3. django o'rnatish
+4. config nomli proyekt yaratish
+5. python manage.py createsuperuser (agar admin panelga kirishga to'g'ri kelib qolsa xar ehtimol)
+
+Loyihaning config sozlamalari
+1. news app yaratish
+2. config/settings.py da news appni installed_apps ga qo'shish
+3. config/settings.py da templates manzilini BASE_DIR orqali berish
+4. config/settings.py timezone ni 'Asia/Tashkent' ga to'g'irlash
+5. config/settings.py da static faylini sozlash
+6. config/urls.py da home funksiyasini asosiy url ('') ga sozlash
+7. config/urls.py da appning url ini ko'rsatish
+
+/// ASOSIY KOD YOZISH QISMI
+// NEWS APP
+1. news/models.py da News modelini yaratish maydonlari(title, short_content, long_content, author, category, created_at)
+    dinamik urllarni oluvchi funksiya yaratish (misol: get_detail_url(self): kabi) detail uchun
+2. news/views.py da home nomli funksiya yaratish(vazifasi: userga News modelidagi datani oladi va barcha newslar
+    ro'yxatini ko'rsatadi)
+3. news app da urls.py yaratish va news/views.py dagi funsksiyalarga yo'nalish berish
+
+// Jadval yaratish
+1. python manage.py makemigrations va python manage.py migrate buyruqlari orqali modellarni ma'lumotlar bazasiga qoshish
+
+// git rm -r --cached .idea (.idea ketib qolsa o'chirish uslubi, --cached mahalliy diskdagi fayllarni o'chirmaydi,
+faqat Git kuzatuvidan olib tashlaydi)
+
+/// MUSTAHKAMLASH KERAK:
+
+
+/// ESLATMA:
